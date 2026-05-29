@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Romantic Surprise 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="background">
+        <div class="gradient-bg"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Floating hearts container -->
+    <div id="heartsContainer" class="hearts-container"></div>
+
+    <!-- Main container -->
+    <main class="container">
+        <!-- Welcome Screen -->
+        <section id="welcomeScreen" class="welcome-screen active">
+            <div class="welcome-content">
+                <h1 class="welcome-title">✨ Hello My Love ✨</h1>
+                <p class="welcome-subtitle">I have something special for you...</p>
+                <button id="openButton" class="open-button">Open My Surprise</button>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section id="mainContent" class="main-content">
+            <!-- Relationship Counter -->
+            <section class="counter-section">
+                <h2>Our Journey Together</h2>
+                <div class="counter-container">
+                    <div class="counter-item">
+                        <span id="days" class="counter-value">0</span>
+                        <p class="counter-label">Days</p>
+                    </div>
+                    <span class="counter-separator">:</span>
+                    <div class="counter-item">
+                        <span id="hours" class="counter-value">0</span>
+                        <p class="counter-label">Hours</p>
+                    </div>
+                    <span class="counter-separator">:</span>
+                    <div class="counter-item">
+                        <span id="minutes" class="counter-value">0</span>
+                        <p class="counter-label">Minutes</p>
+                    </div>
+                    <span class="counter-separator">:</span>
+                    <div class="counter-item">
+                        <span id="seconds" class="counter-value">0</span>
+                        <p class="counter-label">Seconds</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reasons Section -->
+            <section class="reasons-section">
+                <h2>Reasons Why You're Amazing</h2>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <span class="reason-number">1</span>
+                        <p>Your smile brightens my darkest days</p>
+                    </div>
+                    <div class="reason-card">
+                        <span class="reason-number">2</span>
+                        <p>Your kindness inspires me every day</p>
+                    </div>
+                    <div class="reason-card">
+                        <span class="reason-number">3</span>
+                        <p>Your laugh is my favorite sound</p>
+                    </div>
+                    <div class="reason-card">
+                        <span class="reason-number">4</span>
+                        <p>You make every moment feel special</p>
+                    </div>
+                    <div class="reason-card">
+                        <span class="reason-number">5</span>
+                        <p>Your love is my greatest treasure</p>
+                    </div>
+                    <div class="reason-card">
+                        <span class="reason-number">6</span>
+                        <p>You complete my heart perfectly</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sweet Messages Section -->
+            <section class="messages-section">
+                <h2>A Message For You</h2>
+                <div class="message-box">
+                    <p id="messageDisplay">Click the button to receive a sweet message...</p>
+                </div>
+                <button id="messageButton" class="action-button">Get a Sweet Message</button>
+            </section>
+
+            <!-- Romantic Letter Section -->
+            <section class="letter-section">
+                <h2>A Letter To My Heart</h2>
+                <div class="letter-box">
+                    <p id="letterContent"></p>
+                </div>
+            </section>
+
+            <!-- Final Surprise Section -->
+            <section class="surprise-section">
+                <h2>One Last Thing...</h2>
+                <button id="surpriseButton" class="surprise-button">💥 Tap for Surprise 💥</button>
+                <div id="hiddenMessage" class="hidden-message">
+                    <p>Forever yours, always and in all ways. I love you more than words could ever say. 💕</p>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
