@@ -221,7 +221,7 @@ function typeText(element, text, speed = 30) {
 
 function startTypingAnimation() {
     const letterContent = document.getElementById('letterContent');
-    typeText(letterContent, romanticLetter, 20);
+    typeText(letterContent, romanticLetter, 40);
 }
 
 // ================================================
